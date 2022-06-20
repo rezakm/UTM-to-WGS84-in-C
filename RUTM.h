@@ -39,8 +39,6 @@ private:
 	}
 
 	double negative(double x) {
-		//if use_numpy :
-		// return mathlib.max(x) < 0
 		return x < 0;
 	}
 
@@ -132,9 +130,9 @@ public:
 				letter.  For more information see utmzones [1]_
 		Returns
 			-------
-			easting: float or NumPy array
+			easting: float
 				Easting value of UTM coordinates
-			northing: float or NumPy array
+			northing: float
 				Northing value of UTM coordinates
 			zone_number: int
 				Zone number is represented by global map numbers of a UTM zone
@@ -187,9 +185,9 @@ public:
 		*
 		Parameters
 			----------
-			easting: int or NumPy array
+			easting: int
 				Easting value of UTM coordinates
-			northing: int or NumPy array
+			northing: int
 				Northing value of UTM coordinates
 			zone_number: int
 				Zone number is represented with global map numbers of a UTM zone
@@ -203,9 +201,9 @@ public:
 				Raise an OutOfRangeError if outside of bounds
 		Returns
 			-------
-			latitude: float or NumPy array
+			latitude: float
 				Latitude between 80 deg S and 84 deg N, e.g. (-80.0 to 84.0)
-			longitude: float or NumPy array
+			longitude: float
 				Longitude between 180 deg W and 180 deg E, e.g. (-180.0 to 180.0).
 		*/
 	{
